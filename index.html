@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>We ≠ Us</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700|Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="content-wrapper">
+		<nav class="top-nav">
+			<button class="help">Help</button>
+			<h1>We ≠ Us</h1>
+			<label for="nav-check">	
+				<i class="fa fa-bars"></i>
+			</label>
+			<input type="checkbox" id="nav-check">	
+				<ul class="dd-nav">
+					<div class="dd-nav_container">
+						<li>
+							<h2>Breaking up is hard to do</h2>
+							<p>Thankfully, We ≠ Us is here to help by softening the blow of your next breakup text.  Simply type your intended text into our system & click “Test”.  We analyze it and return text a rating.  When the rating is positive your text is good to go.
+							</p>
+							<p>If you are not sure where to start click on the ‘Help’ button for some suggestions.
+							</p>	
+						</li>
+						<li>
+							<h2>How does it work?</h2>
+							<p>We use the AlchemyAPI (powered by Internet magic) to analyses content, context & emojis in order to calculate the tone of your message.
+							</p> 
+							<br>
+							<p>	
+							Don’t believe us? Give it a try!
+							</p>
+						</li>
+						<li class="li-footer">
+							<p> &copy created by Jeanne Schiller // inspired by life</p>
+						</li>
+					</div>	
+				</ul>
+		</nav>
+		<form>
+			<textarea class="query" type="text" placeholder= "Break it to me softly."></textarea>
+			<div class="tone_container">
+				<p></p>
+			</div>
+			<div class="buttons_container">
+			<button class="skin_button close"><i class="fa fa-times"></i></button>
+			<input class="test" type="submit" value="Test">
+			<button class="skin_button send">
+			<!--borrowed this -->
+				<a href="<?php
+				$useragent = $_SERVER['HTTP_USER_AGENT'];
+				if(preg_match('/Macintosh/',$useragent)) $os = 'imessage';
+				elseif(preg_match('/iPhone/',$useragent)) $os = 'sms';
+				else $os = 'sms';
+				echo $os;
+				?>:s">
+			<!--end of borrowed -->
+				<i class="fa fa-check"></i></a>
+				</button>
+			</div>
+		</form>			
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>	
+	<script src="code.js"></script>
+</body>
+</html>

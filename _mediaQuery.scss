@@ -1,0 +1,32 @@
+//MEDIA QUERIE 1220 MIN
+@media (min-width: 1220px) {
+	body{
+		overflow: scroll;
+	}
+}
+//MEDIA QUERIE 601 MIN
+@media (min-width: 601px){
+	input.test{
+		width: 125px;
+		height: 125px;
+	}
+	.skin_button{
+		width: 70px;
+		height: 70px;
+	}
+}
+//MEDIA QUERIE 480 MAX
+@media (max-width: 480px){	
+	.buttons_container{
+			padding-top: 10%;
+			padding-bottom: 10%;
+		}
+}
+//MEDIA QUERIE 310 MAX
+@media (max-width: 310px){
+	h1{
+		padding: 0 10% 0 1%;
+		font-size: 30px;
+	}
+	
+}
